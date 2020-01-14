@@ -6,8 +6,8 @@ def load_library(input)
   result['get_meaning'] = {}
   result['get_emoticon'] = {}
   temp.each{ |k , v| 
-  result['get_meaning'][v[1]]= k
-  result['get_emoticon'][v[0]]= k
+  result['get_meaning'][v[1]] = k
+  result['get_emoticon'][v[0]] = v[1]
   }
   return result
 end
