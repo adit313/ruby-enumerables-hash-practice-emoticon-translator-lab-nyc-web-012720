@@ -2,6 +2,7 @@ require "yaml"
 
 def load_library(input)
   temp = YAML.load_file(input)
+  temp.each
   return result
 end
 
