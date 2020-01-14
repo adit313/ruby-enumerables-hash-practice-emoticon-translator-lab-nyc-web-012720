@@ -18,3 +18,10 @@ def get_japanese_emoticon(path ,en_emoji)
   return temp['get_emoticon'][en_emoji]
   # code goes here
 end
+
+
+def get_english_meaning(path ,jp_emoji)
+  temp = load_library(path)
+  return "Sorry, that emoticon was not found" unless temp['get_meaning'][jp_emoji]
+  return temp['get_meaning'][jp_emoji]
+  # code goes here end
