@@ -2,7 +2,14 @@ require "yaml"
 
 def load_library(input)
   temp = YAML.load_file(input)
-  pp temp  
+  result = {}
+  result['get_meaning'] = {}
+  result['get_emoticon'] = {}
+  temp.each{ |k , v| 
+  result['get_meaning'][v[1]]= k
+  result['get_emoticon'][v[0]]= k
+  }
+  return result
 end
 
 def get_japanese_emoticon(jp_emoji)
