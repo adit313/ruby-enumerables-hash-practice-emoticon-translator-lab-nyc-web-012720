@@ -2,7 +2,6 @@ require "yaml"
 
 def load_library(input)
   result = YAML.load_file(input)
-  pp result
   return result
 end
 
