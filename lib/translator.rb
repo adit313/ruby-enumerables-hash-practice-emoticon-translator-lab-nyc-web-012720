@@ -12,8 +12,8 @@ def load_library(input)
   return result
 end
 
-def get_japanese_emoticon(jp_emoji)
-  temp = load_library('emoticons.yml')
+def get_japanese_emoticon(path ,jp_emoji)
+  temp = load_library(path)
   return temp[jp_emoji][1]
   # code goes here
 end
