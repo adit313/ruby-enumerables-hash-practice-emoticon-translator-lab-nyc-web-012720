@@ -12,9 +12,9 @@ def load_library(input)
   return result
 end
 
-def get_japanese_emoticon(path ,jp_emoji)
+def get_japanese_emoticon(path ,en_emoji)
   temp = load_library(path)
-  return temp[jp_emoji][1]
+  return temp['get_emoticon'][en_emoji]
   # code goes here
 end
 
