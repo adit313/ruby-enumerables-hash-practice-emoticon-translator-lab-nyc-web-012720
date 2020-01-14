@@ -6,7 +6,9 @@ def load_library(input)
   return result
 end
 
-def get_japanese_emoticon
+def get_japanese_emoticon(jp_emoji)
+  temp = load_library('emoticons.yml')
+  temp[jp_emoji]
   # code goes here
 end
 
